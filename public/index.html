@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+  <title></title>
+</head>
+
+<body ng-app="myModule" ng-controller="usersController">
+  <div id="root"></div>
+  <h1>My page</h1> {{testModel}}
+  <input type="field" ng-model="testModel" name="name" value="">
+  <hr/>
+  <user-item ng-repeat="user in users"></user-item>
+</body>
+
+</html>
